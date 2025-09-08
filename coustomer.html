@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 30px;">
+
+  <!-- <h1>INVOICE</h1>
+
+  <div class="invoice-header" style="margin-bottom: 20px;">
+    <div><strong>Customer:</strong> {d.customer.name}</div>
+    <div><strong>Invoice #:</strong> {d.invoice.number}</div>
+    <div><strong>Date:</strong> {d.invoice.date}</div>
+  </div> -->
+
+  <div class="table-container">
+    <table style="width: 100%; border-collapse: separate; border-spacing: 0 10px; font-family: Arial, sans-serif;">
+      <thead>
+        <tr>
+          <th style="background-color: #2c3e50; color: white; padding: 12px; font-size: 16px; text-align: center;">name</th>
+          <th style="background-color: #2c3e50; color: white; padding: 12px; font-size: 16px; text-align: center;">Customer ID</th>
+          <th style="background-color: #2c3e50; color: white; padding: 12px; font-size: 16px; text-align: center;">Billing Adress</th>
+          <th style="background-color: #2c3e50; color: white; padding: 12px; font-size: 16px; text-align: center;">Shipping Address</th>
+          <th style="background-color: #2c3e50; color: white; padding: 12px; font-size: 16px; text-align: center;">Company Phone</th>
+          <th style="background-color: #2c3e50; color: white; padding: 12px; font-size: 16px; text-align: center;">Contact Person</th>
+          <th style="background-color: #2c3e50; color: white; padding: 12px; font-size: 16px; text-align: center;">Title</th>
+          <th style="background-color: #2c3e50; color: white; padding: 12px; font-size: 16px; text-align: center;">Contact Email</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="margin-bottom: 10px;">
+          <td style="background-color: #ecf0f1; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i].name}</td>
+          <td style="background-color: #ecf0f1; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i].CustomerID}</td>
+          <td style="background-color: #ecf0f1; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i].BillingAdress}</td>
+          <td style="background-color: #ecf0f1; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i].ShippingAddress}</td>
+
+          <td style="background-color: #ecf0f1; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i].CompanyPhone}</td>
+          <td style="background-color: #ecf0f1; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i].ContactPerson}</td>
+          <td style="background-color: #ecf0f1; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i].Title}</td>
+          <td style="background-color: #ecf0f1; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i].ContactEmail}</td>
+        </tr>
+        <tr style="margin-bottom: 10px;">
+          <td style="background-color: #f9f9f9; padding: 10px; text-align: center; border: 1px solid #bdc3c7;">{d.Customers[i+1].id}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- <div class="total" style="margin-top: 20px; font-weight: bold;">Total Amount: ₹{d.total}</div> -->
+
+</body>
+</html>
